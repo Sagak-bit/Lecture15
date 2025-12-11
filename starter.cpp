@@ -89,6 +89,10 @@ int main() {
         s->draw();
     }
 
+    // TASK 13: Delete objects properly without memory leak by using virtual destructor
+    Shape* myShape = new Circle("Yellow", 1.0);
+    delete myShape;
+
     canvas.clear();
 
     return 0;
